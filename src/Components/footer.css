@@ -1,0 +1,214 @@
+/* footer {
+
+    margin-right: 0;
+    border: rgb(30, 29, 29);
+    height: 550px;
+    background: #2e2e2c;
+    width: 100%;
+}
+
+
+
+footer .footer-middle input {
+
+    width: 330px;
+    height: 48px;
+
+}
+
+footer .footer-middle .btn-footer {
+    height: 50px;
+    width: 80px;
+    color: white;
+    background-color: black;
+}
+
+footer .footer-middle .container-client {
+    display: flex;
+    color: white;
+
+}
+
+footer .icon {
+    margin-left: 3px;
+    margin-right: 3px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    justify-content: center;
+    background-color: gray;
+}
+
+footer .icon i {
+    
+    padding: 15px;
+    color: black;
+}
+
+footer .client-text {
+    margin-left: 5px;
+    padding-top: 15px;
+}
+
+footer .spacing {
+    border: 0.3px solid grey;
+}
+
+footer .spacing input {
+    margin-left: 4px;
+}
+
+
+
+.middle-bottom {
+    color: white;
+
+}
+
+.bottom-tag {
+    margin-left: 13px;
+}
+
+footer .bottom-contact {
+    margin-left: 0;
+}
+
+footer .middle-bottom .container {
+    margin-top: 50px;
+    height: 300px;
+}
+
+footer .container img {
+    width: 120px;
+
+    margin: auto;
+} */
+
+/* Common styles for footer */
+footer {
+    margin-right: 0;
+    border: rgb(30, 29, 29);
+    height: 550px;
+    background: #2e2e2c;
+    width: 100%;
+}
+
+/* Footer middle styles */
+footer .footer-middle input {
+    width: 70%;
+    height: 48px;
+}
+
+footer .footer-middle .btn-footer {
+    height: 50px;
+    width: 80px;
+    color: white;
+    background-color: black;
+}
+
+footer .footer-middle .container-client {
+    display: flex;
+    color: white;
+}
+
+footer .icon {
+    margin-left: 3px;
+    margin-right: 3px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    justify-content: center;
+    background-color: gray;
+}
+
+footer .icon i {
+    padding: 15px;
+    color: black;
+}
+
+footer .client-text {
+    margin-left: 5px;
+    padding-top: 15px;
+}
+
+footer .spacing {
+    border: 0.3px solid grey;
+}
+
+footer .spacing input {
+    margin-left: 4px;
+}
+
+/* Middle-bottom styles */
+.middle-bottom {
+    color: white;
+}
+
+.bottom-tag {
+    margin-left: 13px;
+}
+
+footer .bottom-contact {
+    margin-left: 0;
+}
+
+footer .middle-bottom .container {
+    margin-top: 50px;
+    height: 300px;
+}
+
+footer .container img {
+    width: 120px;
+    margin: auto;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+
+    /* Adjust the height for smaller screens */
+    footer {
+        height: auto;
+        min-height: 550px;
+        /* Set a minimum height to ensure it doesn't collapse completely */
+    }
+
+    /* Adjust the width of the input field */
+    footer .footer-middle input {
+        width: 100%;
+    }
+
+    /* Center align the text in the footer middle section */
+    footer .client-text {
+        text-align: center;
+    }
+}
+
+@media (max-width: 576px) {
+
+    /* Further adjustments for even smaller screens */
+    footer .container-client {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer .icon {
+        margin-bottom: 10px;
+    }
+
+    footer .bottom-tag {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    footer .bottom-title-2 ul {
+        padding-left: 0;
+        list-style: none;
+        text-align: center;
+    }
+
+    footer .middle-bottom .container {
+        height: auto;
+    }
+
+    footer .container img {
+        width: 80px;
+    }
+}

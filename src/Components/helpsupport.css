@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+.supheading {
+    text-align: center;
+}
+
+.formcontrol {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid black;
+    border-radius: 0;
+    margin-bottom: 0;
+}
+
+.formimage img {
+    width: 480px;
+
+}
+
+.Mainform {
+    margin-left: 10px;
+    margin-top: 30px;
+    color: black;
+}
+
+.formbutton {
+    display: flex;
+
+    justify-content: center;
+}
+
+.formbutton button {
+    width: 130px;
+    color: white;
+    background-color: black;
+    border-radius: 21px;
+    font-weight: bold;
+}
+
+.formbutton button:hover {
+    background: #ED4264;
+    background: -webkit-linear-gradient(to right, #FFEDBC, #ED4264);
+    background: linear-gradient(to right, #FFEDBC, #ED4264);
+    color: black;
+    font-weight: bold;
+}
+
+@media (max-width: 1119px) {
+    .formimage img {
+        width: 100%;
+    }
+
+    .Mainform {
+        margin: 0;
+    }
+
+    .Mainform .fname,
+    .Mainform .Sname,
+    .Mainform .Email {
+        width: 100%;
+    }
+
+    .formbutton {
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 989px) {
+
+    .formimage img {
+        width: 380px;
+
+    }
+}
+
+@media (max-width: 367px) {
+
+    .formimage img {
+        width: 350px;
+
+    }
+}
+
+@media (max-width: 333px) {
+
+    .formimage img {
+        width: 300px;
+
+    }
+}
+
+@media (max-width: 287px) {
+
+    .formimage img {
+        width: 230px;
+
+    }
+}

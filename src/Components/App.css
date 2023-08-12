@@ -1,0 +1,214 @@
+/*  */
+/* this file named (App.css) contains css for both the Register pages */
+.mainrow {
+    margin-top: 50px;
+}
+
+.Formmain {
+    border: 2px solid black;
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column
+}
+
+.text {
+    margin-top: 80px;
+}
+
+.just {
+    margin-left: 10px
+}
+
+.Bigcontrol {
+    width: 98%;
+    margin-left: 5px
+}
+
+.settletopleft {
+    margin-left: 10px;
+    margin-top: 6px
+}
+
+.settleleftright-margin {
+    margin-left: 5px;
+    margin-Top: 10px;
+}
+
+.Contactemail {
+
+    width: 98%;
+}
+
+.settlewidthmargin {
+    width: 98%;
+    margin: 8px 8px 0px 8px;
+}
+
+.Smalllabel {
+    margin-left: 10px;
+    margin-top: 6px;
+}
+
+.somefive {
+    margin-left: 5px;
+}
+
+.Fixwidth {
+
+    width: 98%;
+}
+
+.smallcontrol {
+    width: 90%;
+    margin-left: 5px;
+}
+
+.settleleftwidth {
+    margin-left: 5px;
+    width: 98%;
+}
+
+.marginlefttop-width {
+    margin-left: 5px;
+    margin-top: 10px;
+    width: 96%;
+}
+
+.somefive-width {
+    width: 96%;
+    margin-left: 5px;
+}
+
+.divleftright-margin {
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+.settlepassword {
+    width: 98%;
+    margin-top: 10px;
+    margin-left: 5px;
+}
+
+.settlepasswordverify {
+    width: 96%;
+    margin-top: 10px;
+    margin-left: 3px;
+}
+
+.btn {
+    width: 100px;
+    margin: auto;
+    margin-bottom: 10px;
+
+}
+
+.Contactemail {
+    width: 98%;
+    margin-top: 10px;
+}
+
+.imagesettle {
+    max-width: 480px;
+}
+
+@media only screen and (min-width: 495px) and (max-width:600px) {
+    .Formmain {
+        width: 400px;
+        margin-left: 40px;
+    }
+
+    .imagesettle {
+        max-width: 400px;
+        margin-left: 60px;
+    }
+
+    .chilling {
+        font-size: 18px;
+    }
+
+    .chill {
+        font-size: 16px;
+    }
+
+    .settlewidthmargin {
+        width: 96%;
+
+    }
+}
+
+
+
+@media only screen and (min-width: 385px) and (max-width:490px) {
+
+
+    .Formmain {
+        width: 300px;
+        margin-left: 40px;
+    }
+
+    .imagesettle {
+        max-width: 300px;
+        margin-left: 10px;
+    }
+
+    .chilling {
+        font-size: 14px;
+    }
+
+    .chill {
+        font-size: 13px;
+    }
+
+    .settlewidthmargin {
+        width: 96%;
+    }
+}
+
+@media only screen and (min-width: 281px) and (max-width:380px) {
+    .Formmain {
+        width: 250px;
+        margin-left: 20px;
+    }
+
+    .imagesettle {
+        max-width: 250px;
+        margin-left: 10px;
+    }
+
+    .chilling {
+        font-size: 13px;
+    }
+
+    .chill {
+        font-size: 12px;
+    }
+
+    .settlewidthmargin {
+        width: 94%;
+    }
+}
+
+@media only screen and (max-width: 280px) {
+    .Formmain {
+        width: 250px;
+
+    }
+
+    .imagesettle {
+        max-width: 250px;
+    }
+
+    .chill {
+        font-size: 15px;
+    }
+
+    .chilling {
+        font-size: 10px;
+    }
+
+    .settlewidthmargin {
+        width: 94%;
+    }
+}

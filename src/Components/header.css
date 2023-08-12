@@ -1,0 +1,77 @@
+* {
+    margin-right: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    cursor: pointer;
+}
+
+.logo {
+    flex: 1;
+}
+
+.logo h2 {
+    margin: 0;
+}
+
+.toggle-button {
+    display: none;
+    /* Hide the toggle button by default */
+}
+
+.menu {
+    flex: 1;
+    text-align: right;
+    margin-right: 25px;
+}
+
+.menu ul {
+    display: inline-block;
+    list-style: none;
+}
+
+.menu ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+a {
+    color: #201a1a;
+    text-decoration: none;
+    font-size: 18px;
+    transition: background 0.3s;
+}
+
+/* Media query for screens less than 712px */
+@media (max-width: 712px) {
+    .menu {
+        display: none;
+        /* Hide the menu on small screens */
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        background: #fff;
+        padding: 10px;
+        border-radius: 5px;
+    }
+
+    .toggle-button {
+        display: block;
+        /* Show the toggle button on small screens */
+    }
+
+    .menu.active {
+        display: block;
+        /* Show the menu when active (toggled) */
+    }
+
+    .menu ul li {
+        display: block;
+        margin: 10px 0;
+    }
+}

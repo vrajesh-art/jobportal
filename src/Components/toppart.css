@@ -1,0 +1,299 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Anton&family=Bebas+Neue&family=Josefin+Sans:wght@300;400&family=Lexend+Deca:wght@300&family=Livvic:wght@300&family=Poppins:wght@400;500&family=Roboto&display=swap');
+
+
+.top-part {
+    font-family: 'Poppins', sans-serif;
+    background: #ED4264;
+    background: -webkit-linear-gradient(to right, #FFEDBC, #ED4264);
+    background: linear-gradient(to right, #FFEDBC, #ED4264);
+    display: inline-block;
+    /* margin: 0; */
+    max-width: 100%;
+
+
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.searchbar {
+    display: flex;
+    padding: 10px;
+}
+
+.search-container {
+    border: 2px solid black;
+    margin-left: 10px;
+    background-color: white;
+}
+
+.filter {
+    margin-top: 7px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.filter img {
+    width: 23px;
+}
+
+.just {
+    margin-left: 5px;
+}
+
+.content {
+    margin-left: 5px;
+}
+
+.btn {
+    border: 2px solid black;
+    background: black;
+    color: white;
+}
+
+.btn:hover {
+    color: white;
+    background-color: blue;
+}
+
+.popular-search {
+    border: 2px solid black;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 5px;
+    color: black;
+}
+
+.results {
+    display: flex;
+}
+
+.margin {
+    border: 3px solid rgb(72, 69, 64);
+    padding: 3px;
+    color: black;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+.margin:hover {
+    background-color: rgb(161, 66, 66);
+    color: white;
+    font-weight: 300px;
+}
+
+.popular {
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.second img {
+    max-width: 800px;
+}
+
+/* Responsive Styles */
+
+@media (max-width:1055px) {
+    .first {
+        width: 1000px;
+    }
+
+    .search-container {
+        margin-right: 5px;
+    }
+
+    .btn {
+        margin-left: 4px;
+    }
+}
+
+@media (max-width:915px) {
+    .searchbar {
+        flex-direction: column;
+    }
+
+    .just {
+        margin-top: 10px;
+    }
+
+    .main-input {
+        margin-left: 0;
+    }
+
+    .second img {
+
+        margin-left: 40px;
+    }
+
+    .results .just {
+        max-width: 100px;
+    }
+}
+
+@media (min-width:417px) and (max-width:577px) {
+    .second img {
+        max-width: 390px;
+        margin-left: px;
+    }
+
+}
+
+@media (max-width:415px) {
+    .second img {
+        max-width: 340px;
+        margin-left: 5px;
+    }
+
+    .searchbar {
+        flex-direction: column;
+    }
+
+    .just {
+        margin-top: 5px;
+    }
+
+    .main-input {
+        margin-left: 0;
+    }
+
+    .btn {
+        display: flex;
+        align-items: center;
+        margin-top: 5px;
+    }
+
+    .results {
+        flex-direction: column;
+    }
+
+    .results .margin {
+        width: 100px;
+    }
+
+    .margin {
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+}
+
+@media (max-width:375px) {
+    .second img {
+        max-width: 350px;
+        margin-left: 5px;
+    }
+
+    .searchbar {
+        flex-direction: column;
+    }
+
+    .just {
+        margin-top: 5px;
+    }
+
+    .main-input {
+        margin-left: 0;
+    }
+
+    .btn {
+        display: flex;
+        align-items: center;
+        margin-top: 5px;
+    }
+
+    .results {
+        flex-direction: column;
+    }
+
+    .margin {
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+}
+
+@media (min-width:283px) and (max-width:325px) {
+
+
+
+    .top-part {
+        margin-left: 20px;
+    }
+
+}
+
+
+@media (max-width:280px) {
+    .second img {
+        max-width: 280px;
+        margin-left: 5px;
+    }
+
+    .container-header {
+        margin-top: -20px;
+    }
+}
+
+
+
+
+@media (max-width: 279px) {
+
+
+    .top-part {
+        background-size: auto;
+    }
+
+
+    .content .text {
+        font-size: 18px;
+    }
+
+
+    .main-input {
+        text-align: center;
+    }
+
+
+
+    .just {
+        margin-left: 0;
+        margin-top: 5px;
+    }
+
+
+    .results .just {
+        max-width: 100%;
+    }
+
+
+    .margin {
+        margin: 5px;
+    }
+
+
+    .popular {
+        margin-left: 0;
+        margin-top: 5px;
+    }
+
+
+    .second img {
+        max-width: 100%;
+        margin-left: 0;
+    }
+
+
+    .searchbar {
+        margin: 5px;
+    }
+
+
+    .container-header {
+        margin-top: 0;
+    }
+
+    /* Update the margin for the top-part section */
+    .top-part {
+        margin-left: 0;
+    }
+}

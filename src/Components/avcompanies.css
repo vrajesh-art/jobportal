@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Anton&family=Bebas+Neue&family=Josefin+Sans:wght@300;400&family=Lexend+Deca:wght@300&family=Livvic:wght@300&family=Roboto&display=swap');
+
+.brands {
+    margin: 70px auto;
+}
+
+.col-5 {
+    width: 120px;
+}
+
+.col-5 img {
+    width: 100%;
+    cursor: pointer;
+
+}
+
+/* .col-5 img:hover {
+    filter: grayscale(0%);
+    transform: translateY(4px);
+    transition: 0.5s;
+} */
+
+.title {
+    font-size: 30px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.offer {
+    /* background: radial-gradient(#fff, #ffd6d6); */
+    background: #ED4264;
+    background: -webkit-linear-gradient(to right, #FFEDBC, #ED4264);
+    background: linear-gradient(to right, #FFEDBC, #ED4264);
+    padding: 30px 0;
+}
+
+.small-container {
+    max-width: 1080px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.title {
+    text-align: center;
+    margin: 50px auto 80px;
+    color: black;
+    cursor: pointer;
+    transition: background 0.3s;
+    font-size: 35px;
+    position: relative;
+}
+
+
+
+.title:hover {
+    color: black;
+}
+
+
+
+h2 {
+    font-size: 30px;
+    cursor: pointer;
+    color: black;
+
+}
