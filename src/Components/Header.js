@@ -39,7 +39,7 @@ const Header = () => {
                             <a href="#services">Services</a>
                         </li>
                         <li>
-                            <a href="#features">Jobs</a>
+                            <a href="#features">Resume bilder</a>
                         </li>
                         <li>
                             <span><NavLink to="/Elogin">Elogin</NavLink></span>
