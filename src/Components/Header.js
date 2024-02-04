@@ -21,7 +21,7 @@ const Header = () => {
                 <div className="navbar">
                     <div className="logo">
                         <h2>
-                            <i className="fa-brands fa-stumbleupon"></i>NueVera
+                            <i className="fa-brands fa-stumbleupon"></i>Job-Port
                         </h2>
                     </div>
                     <div className="toggle-button" onClick={toggleNavbar}>
