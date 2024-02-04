@@ -19,7 +19,7 @@ const Availablejobs = () => {
 
                         <div className="job-card">
                             <div className="job-name">
-                                <img className='job-profile' src="./images/tesla.jpg" />
+                                <img className='job-profile' src={require(`../images/${item?.img}`)} />
                                 <div className="job-detail">
                                     <h4>{item.company}</h4>
                                     <h2>{item.title}</h2>

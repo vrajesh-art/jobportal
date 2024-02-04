@@ -7,7 +7,7 @@
 .navbar {
     display: flex;
     align-items: center;
-    padding: 20px;
+    padding: 20px 0px;
     cursor: pointer;
 }
 
@@ -21,13 +21,13 @@
 
 .toggle-button {
     display: none;
-    /* Hide the toggle button by default */
+
 }
 
 .menu {
     flex: 1;
     text-align: right;
-    margin-right: 25px;
+
 }
 
 .menu ul {
@@ -51,7 +51,6 @@ a {
 @media (max-width: 712px) {
     .menu {
         display: none;
-        /* Hide the menu on small screens */
         position: absolute;
         top: 60px;
         right: 20px;

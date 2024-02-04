@@ -27,7 +27,6 @@ const Homepage = () => {
 
 
 
-            <></>
 
             <Toppart />
             <Swipper />
@@ -36,8 +35,8 @@ const Homepage = () => {
             <Trainings />
             <Helpsupport />
             <Jobpost />
-            <Footero />
 
+            <Footero />
 
 
 

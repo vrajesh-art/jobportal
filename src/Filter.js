@@ -8,6 +8,7 @@ import Select from 'react-select';
 import Header from './Components/Header';
 import './filter.css'
 import { NavLink } from "react-router-dom";
+import Footero from './Components/Footero';
 
 
 const Filter = () => {
@@ -59,57 +60,60 @@ const Filter = () => {
     return (
         <>
             <div className="mainfilter">
-
-                <Row>
-                    <div className="header">
-                        <Header />
-                    </div>
-                    <Col lg={4} md={4} sm={12} xs={12}>
-                        <div className="leftpart">
-                            <h4 className="filterheading"><i class="fa-solid fa-filter"></i>Filter </h4>
-                            <div className="filteroptions">
-                                <Form>
-                                    <Select className='space' options={jobtype} defaultValue={value} placeholder="Select Job type" onChange={Setvalue} />
-
-                                    <Select className='space' options={locations} defaultValue={value} placeholder="Select prefered location" onchange={Setvalue} ></Select>
-                                    <div className="check">
-                                        <div className="ftime space">
-                                            <input type="checkbox" name='isyes' /> Full-Time
-                                        </div>
-
-                                        <div className="ptime space">
-                                            <input type="checkbox" name='isyes' />Part-Time
-                                        </div>
-                                        <div className="allintern space">
-                                            <input type="checkbox" />Include all jobs
-                                        </div>
-                                    </div>
-                                    <Select className='space' options={years} defaultValue={value} placeholder="Select Years Of Experience" onChange={Setvalue} />
-                                    <div className="slider-container">
-                                        <input
-                                            type="range"
-                                            min="1000"
-                                            max="40000"
-                                            value={salary}
-                                            className="slider"
-                                            onChange={handleSalaryChange}
-                                        />
-                                        <p>Select Maximum Stipend Expected: {salary}</p>
-                                    </div>
-
-                                    <button className="btn">Apply</button>
-                                </Form>
-
-
-                            </div>
+                <Container>
+                    <Row>
+                        <div className="header">
+                            <Header />
                         </div>
-                    </Col>
-                    <Col lg={8} md={8} sm={12} xs={12}>
+                        <Col lg={4} md={4} sm={12} xs={12}>
+                            <div className="leftpart">
+                                <h4 className="filterheading"><i class="fa-solid fa-filter"></i>Filter </h4>
+                                <div className="filteroptions">
+                                    <Form>
+                                        <Select className='space' options={jobtype} defaultValue={value} placeholder="Select Job type" onChange={Setvalue} />
 
-                        <Availablejobs />
-                    </Col>
-                </Row>
+                                        <Select className='space' options={locations} defaultValue={value} placeholder="Select prefered location" onchange={Setvalue} ></Select>
+                                        <div className="check">
+                                            <div className="ftime space">
+                                                <input type="checkbox" name='isyes' /> Full-Time
+                                            </div>
+
+                                            <div className="ptime space">
+                                                <input type="checkbox" name='isyes' />Part-Time
+                                            </div>
+                                            <div className="allintern space">
+                                                <input type="checkbox" />Include all jobs
+                                            </div>
+                                        </div>
+                                        <Select className='space' options={years} defaultValue={value} placeholder="Select Years Of Experience" onChange={Setvalue} />
+                                        <div className="slider-container">
+                                            <input
+                                                type="range"
+                                                min="1000"
+                                                max="40000"
+                                                value={salary}
+                                                className="slider"
+                                                onChange={handleSalaryChange}
+                                            />
+                                            <p>Select Maximum Stipend Expected: {salary}</p>
+                                        </div>
+
+                                        <button className="btn">Apply</button>
+                                    </Form>
+
+
+                                </div>
+                            </div>
+                        </Col>
+                        <Col lg={8} md={8} sm={12} xs={12}>
+
+                            <Availablejobs />
+                        </Col>
+                    </Row>
+                </Container>
+
             </div>
+            <Footero />
         </>
     )
 }

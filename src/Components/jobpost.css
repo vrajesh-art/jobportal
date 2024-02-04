@@ -7,14 +7,17 @@
 
 
 .postmain {
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     background: #ED4264;
     background: -webkit-linear-gradient(to right, #FFEDBC, #ED4264);
     background: linear-gradient(to right, #FFEDBC, #ED4264);
-    min-height: 250px;
 }
 
 .postcontent {
-    margin-top: 15px;
+    margin-top: 10px;
 }
 
 .postheading {
@@ -25,8 +28,8 @@
 }
 
 .postmargin {
-    margin-bottom: 15px;
-    width: 80%;
-    margin-left: 10px;
-    border: 2px solid black;
+    margin-bottom: 20px;
+    width: 90%;
+    /* margin-left: 10px; */
+    border: 2px solid grey;
 }

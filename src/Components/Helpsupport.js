@@ -3,19 +3,21 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Form from "react-bootstrap/Form";
 import "./helpsupport.css";
+import { Container } from "react-bootstrap";
+import gif from '../images/help.gif'
 
 const Helpsupport = () => {
     return (
         <>
-            <div className="Mainsupport">
+            <Container className="Mainsupport">
                 <div className="supheading">
                     <h1 className="supportheading">Help And Support</h1>
                 </div>
                 <Row>
-                    <Col lg={4} md={12} sm={12} xs={12}>
-                        <div className="formimage">
-                            <img src="./images/help.gif" alt="" srcset="" />
-                        </div>
+                    <Col lg={4} sm={12}>
+
+                        <img src={gif} className="img-fluid" alt="" srcset="" />
+
                     </Col>
                     <Col lg={8} md={12} sm={12} xs={12}>
                         <Form className="Mainform">
@@ -79,7 +81,7 @@ const Helpsupport = () => {
                         </Form>
                     </Col>
                 </Row>
-            </div>
+            </Container>
         </>
     );
 };

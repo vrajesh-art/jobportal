@@ -1,7 +1,7 @@
 import React, { useRef, useState } from 'react';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
-
+// import Construction from '../../src/images/Construction.jpg'
 
 import 'swiper/css';
 import 'swiper/css/scrollbar';
@@ -9,7 +9,8 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 
 import './industry.css';
-import { Keyboard, Scrollbar, Navigation, Pagination } from 'swiper/modules';
+import { swiperData } from './Data';
+import { Keyboard, Scrollbar, Navigation, Pagination, Autoplay } from 'swiper/modules';
 
 const Swipper = () => {
     return (
@@ -40,13 +41,18 @@ const Swipper = () => {
                     },
 
                 }}
-                scrollbar={true}
-                navigation={true}
+                autoplay={{
+                    delay: 2500,
+                    disableOnInteraction: false,
+                }}
+                loop={true}
+                // scrollbar={true}
+                // navigation={true}
                 pagination={{
                     clickable: true,
 
                 }}
-                modules={[Keyboard, Scrollbar, Navigation, Pagination]}
+                modules={[Keyboard, Scrollbar, Navigation, Pagination, Autoplay]}
                 className="mySwiper "
             >
 
@@ -54,375 +60,51 @@ const Swipper = () => {
 
 
                 <div className="browser">
+                    {
+                        swiperData.map((data) => (
+                            <SwiperSlide >
+                                <div className="slide-container  ">
 
-                    <SwiperSlide>
-                        <div className="slide-container  ">
+                                    <div className="slide-content ">
 
-                            <div className="slide-content ">
+                                        <div className="card-wraper  ">
 
-                                <div className="card-wraper  ">
+                                            <div className="card ">
+                                                <div className="image-content">
+                                                    <span className="overlay"></span>
+                                                    <div className="card-image">
+                                                        <img src={require(`../../src/images/${data?.img}`)} alt="" className='card-img' />
 
-                                    <div className="card ">
-                                        <div className="image-content">
-                                            <span className="overlay"></span>
-                                            <div className="card-image">
-                                                <img src="./images/media.jpg" alt="" className='card-img' />
-
+                                                    </div>
+                                                </div>
+                                                <div className="card-content">
+                                                    <h2 className="field">{data?.name}</h2>
+                                                    <button className="button">Click</button>
+                                                </div>
                                             </div>
+
+
+
+
+
                                         </div>
-                                        <div className="card-content">
-                                            <h2 className="field">Media</h2>
-                                            <button className="button">Click</button>
-                                        </div>
+
+
                                     </div>
 
 
-
-
-
                                 </div>
+                            </SwiperSlide>
+                        ))
 
 
-                            </div>
+                    }
 
-
-                        </div>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <div className="slide-container  ">
-
-                            <div className="slide-content ">
-
-                                <div className="card-wraper  ">
-
-                                    <div className="card ">
-                                        <div className="image-content">
-                                            <span className="overlay"></span>
-                                            <div className="card-image">
-                                                <img src="./images/finance.jpg" alt="" className='card-img' />
-
-                                            </div>
-                                        </div>
-                                        <div className="card-content">
-                                            <h2 className="field">Finance</h2>
-                                            <button className="button">Click</button>
-                                        </div>
-                                    </div>
-
-
-
-
-
-                                </div>
-
-
-                            </div>
-
-
-                        </div>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <div className="slide-container  ">
-
-                            <div className="slide-content ">
-
-                                <div className="card-wraper  ">
-
-                                    <div className="card ">
-                                        <div className="image-content">
-                                            <span className="overlay"></span>
-                                            <div className="card-image">
-                                                <img src="./images/medical.jpg" alt="" className='card-img' />
-
-                                            </div>
-                                        </div>
-                                        <div className="card-content">
-                                            <h2 className="field">Medical</h2>
-                                            <button className="button">Click</button>
-                                        </div>
-                                    </div>
-
-
-
-
-
-                                </div>
-
-
-                            </div>
-
-
-                        </div>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <div className="slide-container  ">
-
-                            <div className="slide-content ">
-
-                                <div className="card-wraper  ">
-
-                                    <div className="card ">
-                                        <div className="image-content">
-                                            <span className="overlay"></span>
-                                            <div className="card-image">
-                                                <img src="./images/software.jpg" alt="" className='card-img' />
-
-                                            </div>
-                                        </div>
-                                        <div className="card-content">
-                                            <h2 className="field">Software</h2>
-                                            <button className="button">Click</button>
-                                        </div>
-                                    </div>
-
-
-
-
-
-                                </div>
-
-
-                            </div>
-
-
-                        </div>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <div className="slide-container  ">
-
-                            <div className="slide-content ">
-
-                                <div className="card-wraper  ">
-
-                                    <div className="card ">
-                                        <div className="image-content">
-                                            <span className="overlay"></span>
-                                            <div className="card-image">
-                                                <img src="./images/education.jpg" alt="" className='card-img' />
-
-                                            </div>
-                                        </div>
-                                        <div className="card-content">
-                                            <h2 className="field">Education</h2>
-                                            <button className="button">Click</button>
-                                        </div>
-                                    </div>
-
-
-
-
-
-                                </div>
-
-
-                            </div>
-
-
-                        </div>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <div className="slide-container  ">
-
-                            <div className="slide-content ">
-
-                                <div className="card-wraper  ">
-
-                                    <div className="card ">
-                                        <div className="image-content">
-                                            <span className="overlay"></span>
-                                            <div className="card-image">
-                                                <img src="./images/textile.jpg" alt="" className='card-img' />
-
-                                            </div>
-                                        </div>
-                                        <div className="card-content">
-                                            <h2 className="field">Textile</h2>
-                                            <button className="button">Click</button>
-                                        </div>
-                                    </div>
-
-
-
-
-
-                                </div>
-
-
-                            </div>
-
-
-                        </div>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <div className="slide-container  ">
-
-                            <div className="slide-content ">
-
-                                <div className="card-wraper  ">
-
-                                    <div className="card ">
-                                        <div className="image-content">
-                                            <span className="overlay"></span>
-                                            <div className="card-image">
-                                                <img src="./images/Food.jpg" alt="" className='card-img' />
-
-                                            </div>
-                                        </div>
-                                        <div className="card-content">
-                                            <h2 className="field">Food Processing</h2>
-                                            <button className="button">Click</button>
-                                        </div>
-                                    </div>
-
-
-
-
-
-                                </div>
-
-
-                            </div>
-
-
-                        </div>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <div className="slide-container  ">
-
-                            <div className="slide-content ">
-
-                                <div className="card-wraper  ">
-
-                                    <div className="card ">
-                                        <div className="image-content">
-                                            <span className="overlay"></span>
-                                            <div className="card-image">
-                                                <img src="./images/hospitality.jpg" alt="" className='card-img' />
-
-                                            </div>
-                                        </div>
-                                        <div className="card-content">
-                                            <h2 className="field">Hospitality</h2>
-                                            <button className="button">Click</button>
-                                        </div>
-                                    </div>
-
-
-
-
-
-                                </div>
-
-
-                            </div>
-
-
-                        </div>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <div className="slide-container  ">
-
-                            <div className="slide-content ">
-
-                                <div className="card-wraper  ">
-
-                                    <div className="card ">
-                                        <div className="image-content">
-                                            <span className="overlay"></span>
-                                            <div className="card-image">
-                                                <img src="./images/Construction.jpg" alt="" className='card-img' />
-
-                                            </div>
-                                        </div>
-                                        <div className="card-content">
-                                            <h2 className="field">Construction</h2>
-                                            <button className="button">Click</button>
-                                        </div>
-                                    </div>
-
-
-
-
-
-                                </div>
-
-
-                            </div>
-
-
-                        </div>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <div className="slide-container  ">
-
-                            <div className="slide-content ">
-
-                                <div className="card-wraper  ">
-
-                                    <div className="card ">
-                                        <div className="image-content">
-                                            <span className="overlay"></span>
-                                            <div className="card-image">
-                                                <img src="./images/advertising.jpg" alt="" className='card-img' />
-
-                                            </div>
-                                        </div>
-                                        <div className="card-content">
-                                            <h2 className="field">Advertising</h2>
-                                            <button className="button">Click</button>
-                                        </div>
-                                    </div>
-
-
-
-
-
-                                </div>
-
-
-                            </div>
-
-
-                        </div>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <div className="slide-container  ">
-
-                            <div className="slide-content ">
-
-                                <div className="card-wraper  ">
-
-                                    <div className="card ">
-                                        <div className="image-content">
-                                            <span className="overlay"></span>
-                                            <div className="card-image">
-                                                <img src="./images/Law.jpg" alt="" className='card-img' />
-
-                                            </div>
-                                        </div>
-                                        <div className="card-content">
-                                            <h2 className="field">Law</h2>
-                                            <button className="button">Click</button>
-                                        </div>
-                                    </div>
-
-
-
-
-
-                                </div>
-
-
-                            </div>
-
-
-                        </div>
-                    </SwiperSlide>
                 </div>
 
 
 
-            </Swiper>
+            </Swiper >
         </>
     )
 }

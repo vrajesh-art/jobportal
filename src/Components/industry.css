@@ -1,7 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Abel&family=Anton&family=Bebas+Neue&family=Josefin+Sans:wght@300;400&family=Lexend+Deca:wght@300&family=Livvic:wght@300&family=Roboto&display=swap');
 
-.browser {
+.body {
+    overflow-x: hidden;
+}
 
+.browser {
     min-height: 100vh;
     display: flex;
     align-items: center;

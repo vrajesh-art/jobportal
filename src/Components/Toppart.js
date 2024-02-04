@@ -8,7 +8,8 @@ import Col from 'react-bootstrap/Col';
 import Select from 'react-select'
 import Header from './Header';
 import { NavLink } from "react-router-dom";
-
+import back from '../images/back123.png'
+import edit from '../images/edit.png'
 const Toppart = () => {
     const [value, Setvalue] = useState(null)
     const locations = [
@@ -30,70 +31,80 @@ const Toppart = () => {
                 <div className="header">
                     <Header />
                 </div>
-                <div className="container-header">
+                <Container className="container-header">
                     <Row classname="Rowstyle">
-                        <Col lg={6} md={8} sm={12} className="first">
+                        <Col lg={6} md={8} sm={12}>
 
-                            <div className="content">
+                            <div className="content" style={{ marginTop: '-35px', marginLeft: '5px' }}>
                                 <h1 className="text">Get The Best Job And Accelerate Your Carrier</h1>
                             </div>
-                            <Form classname="top">
-                                <div className="search-container">
-                                    <div className="searchbar">
-                                        <div className="just main-input">
-                                            <Form.Control className="chilling Bigcontrol" type="text" placeholder="Enter Keywords" required />
-                                        </div>
-                                        <div className=" just   main-location">
+                            <Form >
+                                <div className="search-container ">
+                                    <Row className="searchbar">
+                                        <Col lg={3} className='mb-2'>
+                                            <Form.Control className="" type="text" placeholder="Enter Keywords" required />
+                                        </Col>
+                                        <Col lg={3} className='mb-2'>
                                             <Select defaultValue={value} options={locations}
                                                 onChange={Setvalue}
                                                 placeholder="Location" />
-                                        </div>
-                                        <div className=" just main-comapany">
+                                        </Col>
+                                        <Col lg={3} className='mb-2'>
                                             <Select placeholder="Company" options={Company} defaultValue={value} onChange={Setvalue} />
-                                        </div>
-                                        <div className="filter">
-                                            <NavLink to="/Filter"><img src="./images/edit.png" alt="" srcset="" /></NavLink>
-                                            {/* <img src="./images/edit.png" alt="" srcset="" /> */}
-                                        </div>
-                                        <div className="btn">
-                                            Search
-                                        </div>
+                                        </Col>
 
-                                    </div>
+                                        <Col className="filter mb-2" lg={3} >
+                                            <NavLink to="/Filter"><img src={edit} alt="" srcset="" /></NavLink>
+                                            {/* <img src="./images/edit.png" alt="" srcset="" /> */}
+                                        </Col>
+
+
+                                    </Row>
+
+
+
+
                                 </div>
+                                <button className="btn ms-2 mt-2">
+                                    Search
+                                </button>
                             </Form>
-                            <div className="popular">
-                                <h4 className="popular-search">Popular searches</h4>
-                                <div className="results">
-                                    <div className="  margin  website">
-                                        Website Developers
-                                    </div>
-                                    <div className=" margin just app">
-                                        Application Developer
-                                    </div>
-                                    <div className="  margin just manager">
-                                        Manager
-                                    </div>
-                                    <div className="just margin engineering">
-                                        Engineering
-                                    </div>
-                                </div>
-                            </div>
+
+                            <Row>
+                                <Col ><h2 className="popular-search text-sm-center text-lg-start">Popular Searches</h2></Col>
+                            </Row>
+                            <Container><Row>
+
+                                <Col lg={4} sm={6} className=" margin mb-3">
+                                    Website Developers
+                                </Col>
+                                <Col lg={4} sm={6} className=" margin mb-3">
+                                    Application Developer
+                                </Col>
+                                <Col lg={4} sm={6} className=" margin mb-3">
+                                    Manager
+                                </Col >
+                                <Col lg={4} sm={6} className="margin mb-3">
+                                    Engineering
+                                </Col>
+
+                            </Row></Container>
+
 
 
                         </Col>
 
                         <Col lg={6} md={4} sm={12} >
-                            <div className="second">
-                                <img src="./images/back123.png" alt="" srcset="" />
-                            </div>
+
+                            <img src={back} className='img-fluid' />
+
                         </Col>
                     </Row>
-                </div>
+                </Container>
 
 
 
-            </div></>
+            </div ></>
     )
 }
 

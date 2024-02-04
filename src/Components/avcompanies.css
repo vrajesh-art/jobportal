@@ -26,11 +26,15 @@
 }
 
 .offer {
-    /* background: radial-gradient(#fff, #ffd6d6); */
+
     background: #ED4264;
     background: -webkit-linear-gradient(to right, #FFEDBC, #ED4264);
     background: linear-gradient(to right, #FFEDBC, #ED4264);
     padding: 30px 0;
+}
+
+.offer img {
+    width: 200px;
 }
 
 .small-container {
