@@ -27,7 +27,7 @@
 }
 
 .card {
-    margin-left: 40px;
+
     border-radius: 25px;
     background-color: #fff;
 }
@@ -124,18 +124,18 @@
 
 @media (max-width: 320px) {
     .card {
-        width: 170px;
-        margin-left: 10px;
+        width: 180px;
+
     }
 
     .slide-content {
         margin-left: 20px;
     }
 
-    .slide-container {
+    /* .slide-container {
         margin-left: 10px;
         margin-right: 10px;
-    }
+    } */
 
     .overlay::before,
     .overlay::after {

@@ -10,7 +10,8 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Empimg from "./Empimg";
 import { NavLink } from "react-router-dom";
-
+import Header from '../Components/Header'
+import Footero from "./Footero";
 
 const propTypes = {};
 
@@ -19,7 +20,8 @@ const defaultProps = {};
 const Home = () => {
     return (
         <>
-            <Container>
+            <Header />
+            <Container style={{ marginBottom: '150px' }}>
                 <Row className=" rowmain ms-4" >
                     {/* Form Section */}
                     <Col lg={6} md={6} sm={12} xs={12} className="mb-4">
@@ -72,6 +74,7 @@ const Home = () => {
                     </Col>
                 </Row>
             </Container>
+            <Footero />
         </>
     );
 };

@@ -6,6 +6,7 @@
     background: #ED4264;
     background: -webkit-linear-gradient(to right, #FFEDBC, #ED4264);
     background: linear-gradient(to right, #FFEDBC, #ED4264);
+    min-height: 700px;
     width: 100%;
 
 

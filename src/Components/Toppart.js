@@ -33,13 +33,13 @@ const Toppart = () => {
                 </div>
                 <Container className="container-header">
                     <Row classname="Rowstyle">
-                        <Col lg={6} md={8} sm={12}>
+                        <Col lg={6} md={8} sm={12} style={{ marginTop: '-40px' }}>
 
-                            <div className="content" style={{ marginTop: '-35px', marginLeft: '5px' }}>
+                            <div className="content" style={{ marginLeft: '5px' }}>
                                 <h1 className="text">Get The Best Job And Accelerate Your Carrier</h1>
                             </div>
                             <Form >
-                                <div className="search-container ">
+                                <div className="search-container mt-lg-4">
                                     <Row className="searchbar">
                                         <Col lg={3} className='mb-2'>
                                             <Form.Control className="" type="text" placeholder="Enter Keywords" required />
@@ -65,12 +65,12 @@ const Toppart = () => {
 
 
                                 </div>
-                                <button className="btn ms-2 mt-2">
+                                <button className="btn ms-2 mt-4">
                                     Search
                                 </button>
                             </Form>
 
-                            <Row>
+                            <Row className='mt-3'>
                                 <Col ><h2 className="popular-search text-sm-center text-lg-start">Popular Searches</h2></Col>
                             </Row>
                             <Container><Row>
@@ -94,7 +94,7 @@ const Toppart = () => {
 
                         </Col>
 
-                        <Col lg={6} md={4} sm={12} >
+                        <Col lg={6} md={4} sm={12} style={{ marginTop: '50px' }}>
 
                             <img src={back} className='img-fluid' />
 

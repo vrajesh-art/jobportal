@@ -31,7 +31,7 @@ const Header = () => {
                     <nav className={`menu ${showNavbar ? 'active' : ''}`}>
                         <ul id="MenuItem">
                             <li>
-                                <span><NavLink to="/home">Home</NavLink></span>
+                                <span><NavLink to="/">Home</NavLink></span>
                             </li>
                             <li>
                                 <a href="#about">About</a>

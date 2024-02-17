@@ -11,10 +11,11 @@ import 'swiper/css/pagination';
 import './industry.css';
 import { swiperData } from './Data';
 import { Keyboard, Scrollbar, Navigation, Pagination, Autoplay } from 'swiper/modules';
+import { Container } from 'react-bootstrap';
 
 const Swipper = () => {
     return (
-        <>
+        <Container>
             <h1 className='swipper-text'>Browse Jobs By Industries</h1>
             <Swiper
                 slidesPerView={1}
@@ -105,7 +106,7 @@ const Swipper = () => {
 
 
             </Swiper >
-        </>
+        </Container>
     )
 }
 

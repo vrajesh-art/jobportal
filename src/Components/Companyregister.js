@@ -9,8 +9,8 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import { NavLink } from "react-router-dom";
 import Select from 'react-select';
-
-
+import Header from '../Components/Header'
+import Footero from './Footero';
 const Companyregister = () => {
     const [visible, setvisible] = useState(false);
 
@@ -48,70 +48,74 @@ const Companyregister = () => {
     // ... Your existing code ...
 
     return (
-        <Container>
-            <Row className=" mainrow justify-content-md-center" >
-                <Col lg={6} md={8} sm={12}>
-                    <Form className="Formmain" >
-                        <h3 className="text text-center" >Company Signup</h3>
-                        <Form.Group className="mb-3" controlId="formBasicEmail">
-                            <Form.Label>
-                                <h4 className="chill just">Company's Details</h4>
-                            </Form.Label>
-                            <Form.Control className="chilling Bigcontrol" type="text" placeholder="Company's Name" required />
-                            <Form.Control className="chilling Bigcontrol" style={{ marginTop: "10px" }} type="text" placeholder="Industry/Sector details" required />
-                            <Form.Control className="chilling settlewidthmargin" type="text" as="textarea" rows={3} placeholder="Company's Brief Overview" required />
+        <>
+            <Header />
+            <Container style={{ marginBottom: '150px' }}>
+                <Row className=" mainrow justify-content-md-center" >
+                    <Col lg={6} md={8} sm={12}>
+                        <Form className="Formmain" >
+                            <h3 className="text text-center" >Company Signup</h3>
+                            <Form.Group className="mb-3" controlId="formBasicEmail">
+                                <Form.Label>
+                                    <h4 className="chill just">Company's Details</h4>
+                                </Form.Label>
+                                <Form.Control className="chilling Bigcontrol" type="text" placeholder="Company's Name" required />
+                                <Form.Control className="chilling Bigcontrol" style={{ marginTop: "10px" }} type="text" placeholder="Industry/Sector details" required />
+                                <Form.Control className="chilling settlewidthmargin" type="text" as="textarea" rows={3} placeholder="Company's Brief Overview" required />
 
-                            <Form.Control className="chilling Bigcontrol" style={{ marginTop: "10px" }} type="text" placeholder="Company's Website Details" />
-                            <Form.Control className="chilling Bigcontrol" style={{ marginTop: "10px" }} type="text" placeholder="Company's Size" />
-                            <Form.Control className="chilling Bigcontrol" style={{ marginTop: "10px" }} type="text" placeholder="Company's Location" />
-                            <Form.Control className="chilling Bigcontrol" style={{ marginTop: "10px" }} type="text" placeholder="Company's Logo" />
-
-
-                            <Form.Label > <h4 className='chill settletopleft'>Contact Information</h4></Form.Label>
-
+                                <Form.Control className="chilling Bigcontrol" style={{ marginTop: "10px" }} type="text" placeholder="Company's Website Details" />
+                                <Form.Control className="chilling Bigcontrol" style={{ marginTop: "10px" }} type="text" placeholder="Company's Size" />
+                                <Form.Control className="chilling Bigcontrol" style={{ marginTop: "10px" }} type="text" placeholder="Company's Location" />
+                                <Form.Control className="chilling Bigcontrol" style={{ marginTop: "10px" }} type="text" placeholder="Company's Logo" />
 
 
-                            <Row>
-
-                                <Col lg={12} md={12} sm={12} xs={12}>
-                                    <Form.Control className="chilling settlewidthmargin" type="text" placeholder="Contact Person's Name" required />
-                                    <Form.Control className="chilling settlewidthmargin" type="text" placeholder="Contact Person's Number" required />
-                                    <Form.Control className="chilling settlewidthmargin" type="text" placeholder="Contact Person's Email Id" required />
-                                </Col>
-                            </Row>
+                                <Form.Label > <h4 className='chill settletopleft'>Contact Information</h4></Form.Label>
 
 
 
-                            <Form.Label>
-                                <h4 className=' chill just'>Create Username And Password</h4>
-                            </Form.Label>
-                            <Row>
-                                <Col lg={12} md={12} sm={12} xs={12}>
-                                    <Form.Control className='chilling settleleftwidth' type="email" placeholder="Enter  Email" required />
-                                </Col>
-                                <Col lg={6} md={6} sm={6} xs={6}>
-                                    <Form.Control className='chilling settlepassword' type="text" placeholder="Password" required />
-                                </Col>
-                                <Col lg={6} md={6} sm={6} xs={6}>
-                                    <Form.Control className='chilling settlepasswordverify' type="text" placeholder="Verify Password" required />
-                                </Col>
-                            </Row>
+                                <Row>
 
-                            <p className="mt-3 text-center">Company Already Registered <span><NavLink to="/Clogin">Log In</NavLink></span></p>
-                        </Form.Group>
-                        <Button className='btn'
-                            variant="dark" type="submit">
-                            Submit
-                        </Button>
-                    </Form>
-                </Col>
-                <Col lg={6} md={4} sm={12}>
-                    <div style={{ position: "sticky", top: "0" }}>
-                        <Empimg />
-                    </div>
-                </Col>
-            </Row>
-        </Container>
+                                    <Col lg={12} md={12} sm={12} xs={12}>
+                                        <Form.Control className="chilling settlewidthmargin" type="text" placeholder="Contact Person's Name" required />
+                                        <Form.Control className="chilling settlewidthmargin" type="text" placeholder="Contact Person's Number" required />
+                                        <Form.Control className="chilling settlewidthmargin" type="text" placeholder="Contact Person's Email Id" required />
+                                    </Col>
+                                </Row>
+
+
+
+                                <Form.Label>
+                                    <h4 className=' chill just'>Create Username And Password</h4>
+                                </Form.Label>
+                                <Row>
+                                    <Col lg={12} md={12} sm={12} xs={12}>
+                                        <Form.Control className='chilling settleleftwidth' type="email" placeholder="Enter  Email" required />
+                                    </Col>
+                                    <Col lg={6} md={6} sm={6} xs={6}>
+                                        <Form.Control className='chilling settlepassword' type="text" placeholder="Password" required />
+                                    </Col>
+                                    <Col lg={6} md={6} sm={6} xs={6}>
+                                        <Form.Control className='chilling settlepasswordverify' type="text" placeholder="Verify Password" required />
+                                    </Col>
+                                </Row>
+
+                                <p className="mt-3 text-center">Company Already Registered <span><NavLink to="/Clogin">Log In</NavLink></span></p>
+                            </Form.Group>
+                            <Button className='btn'
+                                variant="dark" type="submit">
+                                Submit
+                            </Button>
+                        </Form>
+                    </Col>
+                    <Col lg={6} md={4} sm={12}>
+                        <div style={{ position: "sticky", top: "0" }}>
+                            <Empimg />
+                        </div>
+                    </Col>
+                </Row>
+            </Container>
+            <Footero /></>
+
     )
 }
 
