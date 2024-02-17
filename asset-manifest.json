@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/jobportal/static/css/main.4fcf818f.css",
-    "main.js": "/jobportal/static/js/main.4fa6224f.js",
+    "main.css": "/jobportal/static/css/main.918bb57e.css",
+    "main.js": "/jobportal/static/js/main.eb7f302d.js",
     "static/js/787.3de4a7af.chunk.js": "/jobportal/static/js/787.3de4a7af.chunk.js",
     "static/media/Law.jpg": "/jobportal/static/media/Law.199091f6da2e9622084a.jpg",
     "static/media/textile.jpg": "/jobportal/static/media/textile.8329a483f986796b071f.jpg",
@@ -36,12 +36,12 @@
     "static/media/employee.svg": "/jobportal/static/media/employee.87cf69d17dfad995f6bc.svg",
     "static/media/nextjs.png": "/jobportal/static/media/nextjs.8d64d64843058b1c9a96.png",
     "index.html": "/jobportal/index.html",
-    "main.4fcf818f.css.map": "/jobportal/static/css/main.4fcf818f.css.map",
-    "main.4fa6224f.js.map": "/jobportal/static/js/main.4fa6224f.js.map",
+    "main.918bb57e.css.map": "/jobportal/static/css/main.918bb57e.css.map",
+    "main.eb7f302d.js.map": "/jobportal/static/js/main.eb7f302d.js.map",
     "787.3de4a7af.chunk.js.map": "/jobportal/static/js/787.3de4a7af.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4fcf818f.css",
-    "static/js/main.4fa6224f.js"
+    "static/css/main.918bb57e.css",
+    "static/js/main.eb7f302d.js"
   ]
 }
