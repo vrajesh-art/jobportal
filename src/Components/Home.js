@@ -22,9 +22,9 @@ const Home = () => {
         <>
             <Header />
             <Container style={{ marginBottom: '150px' }}>
-                <Row className=" rowmain ms-4" >
+                <Row className=" rowmain m-auto" >
                     {/* Form Section */}
-                    <Col lg={6} md={6} sm={12} xs={12} className="mb-4">
+                    <Col lg={6} md={6} sm={12} xs={12} className="mt-lg-5 mt-0 mb-4">
                         <Form className="mainform"
 
                         >
@@ -69,7 +69,7 @@ const Home = () => {
                     </Col>
 
                     {/* Image Section */}
-                    <Col lg={6} md={6} sm={12} xs={12} className="mb-4 d-flex align-items-center">
+                    <Col lg={6} md={6} sm={12} xs={12} className="mb-4 mt-lg-4">
                         <Empimg />
                     </Col>
                 </Row>

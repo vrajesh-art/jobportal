@@ -17,8 +17,8 @@ export const Companylogin = () => {
         <>
             <Header />
             <Container style={{ marginBottom: '150px' }}>
-                <Row className=" rowmain ms-4" >
-                    <Col lg={6} md={6} sm={12} xs={12} className="mb-4">
+                <Row className=" rowmain m-auto" >
+                    <Col lg={6} md={6} sm={12} xs={12} className="mt-lg-5 mt-0 mb-4">
                         <Form className='mainform'>
                             <h3 className=" signup text-center" >Company Login</h3>
                             <Form.Group className="mt-4 " controlId="formBasicEmail">
@@ -32,7 +32,7 @@ export const Companylogin = () => {
                                 <Form.Control type="text" className="settlecontrol" placeholder="Password" required />
                             </Form.Group>
 
-                            <p className="mt-3 text-center">If the company is not registered, please <span><NavLink to="/Cregister">Signup</NavLink></span></p>
+                            <p className="mt-3 text-center">company not registered, <span><NavLink to="/Cregister">Signup</NavLink></span></p>
 
                             <Button className='btn' variant="dark" type="submit">
                                 Submit
@@ -41,13 +41,13 @@ export const Companylogin = () => {
 
                         </Form>
 
-                    </Col>
+                    </Col >
 
-                    <Col lg={6} md={6} sm={12} xs={12} className="mb-4">
+                    <Col lg={6} md={6} sm={12} className="mb-4 mt-lg-4" >
                         <Empimg />
                     </Col>
-                </Row>
-            </Container>
+                </Row >
+            </Container >
             <Footero />
         </>
     )

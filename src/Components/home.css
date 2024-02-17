@@ -50,14 +50,14 @@
 @media only screen and (min-width: 495px) and (max-width:635px) {
 
     .mainform {
-        margin-left: 5px;
-        margin-right: 10px;
-        width: 400px;
+        /* margin-left: 5px; */
+        /* margin-right: 10px; */
+        /* width: 400px; */
     }
 
     .imagesettle {
         width: 310px;
-        margin-left: 10px;
+        /* margin-left: 10px; */
     }
 }
 
@@ -67,7 +67,7 @@
 
     .rowmain {
         margin-top: 50px;
-        margin-right: 2px;
+
         width: 100%;
     }
 

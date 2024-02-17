@@ -52,7 +52,7 @@ const Companyregister = () => {
             <Header />
             <Container style={{ marginBottom: '150px' }}>
                 <Row className=" mainrow justify-content-md-center" >
-                    <Col lg={6} md={8} sm={12}>
+                    <Col lg={6} md={12} sm={12}>
                         <Form className="Formmain" >
                             <h3 className="text text-center" >Company Signup</h3>
                             <Form.Group className="mb-3" controlId="formBasicEmail">

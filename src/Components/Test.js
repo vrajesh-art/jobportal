@@ -51,8 +51,8 @@ const Test = () => {
         <>
             <Header />
             <Container style={{ marginBottom: '150px' }}>
-                <Row className=" mainrow justify-content-md-center" >
-                    <Col lg={6} md={8} sm={12}>
+                <Row className=" mainrow justify-content-md-center m-auto" >
+                    <Col lg={6} md={12} sm={12}>
                         <Form className="Formmain" >
                             <h3 className="text text-center" >Employee Signup</h3>
                             <Form.Group className="mb-3" controlId="formBasicEmail">

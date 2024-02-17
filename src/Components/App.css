@@ -115,8 +115,9 @@
 
 @media only screen and (min-width: 495px) and (max-width:600px) {
     .Formmain {
-        width: 400px;
-        margin-left: 40px;
+        width: auto;
+        margin: auto;
+        padding: 10px;
     }
 
     .imagesettle {
@@ -144,8 +145,9 @@
 
 
     .Formmain {
-        width: 300px;
-        margin-left: 40px;
+        width: auto;
+        padding: 10px;
+        margin: auto;
     }
 
     .imagesettle {
@@ -168,13 +170,13 @@
 
 @media only screen and (min-width: 281px) and (max-width:380px) {
     .Formmain {
-        width: 250px;
-        margin-left: 20px;
+        width: auto;
+        padding: 10px;
+        margin: auto;
     }
 
     .imagesettle {
         max-width: 250px;
-        margin-left: 10px;
     }
 
     .chilling {
@@ -192,8 +194,9 @@
 
 @media only screen and (max-width: 280px) {
     .Formmain {
-        width: 250px;
-
+        width: auto;
+        padding: 10px;
+        margin: auto;
     }
 
     .imagesettle {
